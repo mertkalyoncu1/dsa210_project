@@ -44,10 +44,10 @@ The main objectives of this project are:
 
 1. **Exploring Viewing Patterns**:
    - Determine the hours during which I am most active on YouTube.
-   - Compare weekday and weekend viewing habits to identify differences in behavior.
+   - Compare hourly viewing habits to identify differences in behavior.
 
 2. **Uncovering Behavioral Insights**:
-   - Correlate viewing times with daily routines, such as meals or bedtime.
+   - Correlate viewing times with daily meals.
    - Analyze how habits evolve over time, identifying potential triggers or patterns.
 
 3. **Creating Visualizations**:
@@ -70,7 +70,7 @@ To achieve the project goals, the following steps will be undertaken:
    - Extract key fields, such as date, time, and video details, into a structured format like CSV for easier manipulation.
 
 2. **Exploratory Data Analysis (EDA)**:
-   - Analyze the frequency of viewing by hour, day, and week.
+   - Analyze the frequency of viewing by hour.
    - Summarize total time spent watching videos and categorize habits into morning, afternoon, evening, or late-night.
   
 3. **Merging Datasets**:
