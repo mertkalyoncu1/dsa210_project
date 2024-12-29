@@ -2,22 +2,40 @@
 # YouTube Watching Pattern Analysis
 
 ## Project Description
-This project delves into the patterns and trends in my YouTube watching history. By leveraging data exported from Google Takeout, I aim to identify the hours during which I watch videos most frequently and understand behavioral patterns. These may include correlations with daily activities such as watching videos during meals, as part of a work or study break, or just before sleep. Through a structured analysis, the project seeks to offer insights into how digital consumption fits into my everyday life.
+This project explores the relationship between my YouTube viewing patterns and meal times. The analysis investigates whether my YouTube watching habits align with food ordering times, based on payments made to Yemeksepeti, a food delivery service. The hypothesis is that YouTube watching times are correlated with eating times, potentially revealing insights about consumption habits during meals.
 
-This project not only provides a reflection of personal habits but also serves as a foundation for exploring broader behavioral analytics using digital data. Understanding these patterns can shed light on routines and behaviors that might otherwise go unnoticed, offering opportunities for self-awareness and improved time management.
+By integrating two datasets—YouTube viewing history and a mock bank account transactions database—the project aims to uncover correlations between digital media consumption and daily routines.
 
 ---
 
 ## Dataset Description
-The dataset used in this project was downloaded from Google Takeout and includes detailed information about my YouTube activity. The data is structured in JSON format, making it suitable for systematic preprocessing and analysis. Key features of the dataset include:
+1. YouTube Viewing History
 
-- **Timestamp**: Precise date and time when each video was watched.
-- **Video Titles**: The names of the videos, giving context to the type of content viewed.
-- **Video URLs**: Links to the watched videos, allowing further exploration if needed.
-- **Channels**: Information about the creators or channels behind the videos.
-- **Metadata**: Additional activity details, such as watch history settings.
+This dataset was exported via Google Takeout and contains:
 
-This rich dataset enables comprehensive analysis, from simple time-based trends to more complex behavioral correlations.
+Timestamp: Exact date and time of video views.
+
+Video Titles: Descriptions of the content watched.
+
+Video URLs: Links for further exploration.
+
+Channels: Content creators associated with the videos.
+
+Metadata: Additional information like watch settings and history status.
+
+2. Bank Account Transactions Database
+
+This dataset shows payments made to Yemeksepeti, indicating food orders. The features include:
+
+Transaction ID: Unique identifier for each transaction.
+
+Timestamp: Date and time of the payment.
+
+Amount: Payment value in Turkish Lira (TRY).
+
+Merchant Name: Confirmed as "Yemeksepeti."
+
+The purpose of this data is to approximate meal times based on food delivery records and correlate these with YouTube viewing sessions.
 
 ---
 
@@ -54,6 +72,11 @@ To achieve the project goals, the following steps will be undertaken:
 2. **Exploratory Data Analysis (EDA)**:
    - Analyze the frequency of viewing by hour, day, and week.
    - Summarize total time spent watching videos and categorize habits into morning, afternoon, evening, or late-night.
+  
+3. **Merging Datasets**:
+
+   -Join the YouTube and transaction datasets based on timestamps.
+   -Create derived features, such as time gaps between transactions and viewing activities.
 
 3. **Visualization**:
    - Create detailed heatmaps to visualize hourly activity patterns.
