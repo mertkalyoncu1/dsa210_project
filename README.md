@@ -109,5 +109,5 @@ These tools ensure efficient data handling and insightful analysis.
 ## Acknowledgments
 I extend my gratitude to Google Takeout for providing access to my YouTube watch history data. This project is a testament to how personal data can offer valuable insights when analyzed thoughtfully.
 
-You can find the results and report as a PDF file in the files section.
+You can find the results and report as a PDF file in the files section..
 
