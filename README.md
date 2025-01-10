@@ -1,14 +1,15 @@
-# dsa210_project
-# YouTube Watching Pattern Analysis
+dsa210_project
 
-## Project Description
-This project explores the relationship between my YouTube viewing patterns and meal times. The analysis investigates whether my YouTube watching habits align with food ordering times, based on payments made to Yemeksepeti, a food delivery service. The hypothesis is that YouTube watching times are correlated with eating times, potentially revealing insights about consumption habits during meals.
+YouTube Watching Pattern Analysis with Finals Weeks
 
-By integrating two datasets—YouTube viewing history and a mock bank account transactions database—the project aims to uncover correlations between digital media consumption and daily routines.
+Project Description
 
----
+This project explores the relationship between my YouTube viewing patterns and my academic schedule, particularly during finals weeks. The analysis focuses on understanding how my YouTube watching habits fluctuate on a monthly and weekly basis, with an emphasis on high-stress periods like exam preparation. The hypothesis is that YouTube watching times vary significantly during finals weeks compared to regular periods, offering insights into procrastination or stress-relief behaviors.
 
-## Dataset Description
+By analyzing the YouTube viewing history dataset, this project aims to uncover patterns and trends in digital media consumption during critical academic periods.
+
+Dataset Description
+
 1. YouTube Viewing History
 
 This dataset was exported via Google Takeout and contains:
@@ -23,91 +24,95 @@ Channels: Content creators associated with the videos.
 
 Metadata: Additional information like watch settings and history status.
 
-2. Bank Account Transactions Database
+This dataset will provide the basis for analyzing viewing habits across different periods, with a focus on identifying patterns during finals weeks.
 
-This dataset shows payments made to Yemeksepeti, indicating food orders. The features include:
+Project Goals
 
-Transaction ID: Unique identifier for each transaction.
-
-Timestamp: Date and time of the payment.
-
-Amount: Payment value in Turkish Lira (TRY).
-
-Merchant Name: Confirmed as "Yemeksepeti."
-
-The purpose of this data is to approximate meal times based on food delivery records and correlate these with YouTube viewing sessions.
-
----
-
-## Project Goals
 The main objectives of this project are:
 
-1. **Exploring Viewing Patterns**:
-   - Determine the hours during which I am most active on YouTube.
-   - Compare hourly viewing habits to identify differences in behavior.
+1. Exploring Viewing Patterns
 
-2. **Uncovering Behavioral Insights**:
-   - Correlate viewing times with daily meals.
-   - Analyze how habits evolve over time, identifying potential triggers or patterns.
+Analyze YouTube activity on a monthly and weekly basis.
 
-3. **Creating Visualizations**:
-   - Generate visually compelling representations of viewing trends, such as heatmaps and line graphs, to make the insights intuitive and actionable.
+Determine the hours during which I am most active on YouTube.
 
-4. **Documenting Key Findings**:
-   - Summarize the results of the analysis to draw meaningful conclusions.
-   - Highlight any surprising or unexpected patterns in my watching history.
+Compare viewing habits during finals weeks versus regular weeks.
 
-5. **Laying the Foundation for Future Analysis**:
-   - Suggest additional avenues for exploration, such as analyzing content genres or combining YouTube data with other activity logs for a holistic view of my habits.
+2. Uncovering Behavioral Insights
 
----
+Identify potential correlations between viewing habits and academic stress periods.
 
-## Planned Steps
+Analyze changes in viewing trends during finals weeks.
+
+3. Creating Visualizations
+
+Generate visually compelling representations of viewing trends, such as heatmaps and time-series graphs, to make the insights intuitive and actionable.
+
+4. Documenting Key Findings
+
+Summarize the results of the analysis to draw meaningful conclusions.
+
+Highlight any surprising or unexpected patterns in my watching history.
+
+5. Laying the Foundation for Future Analysis
+
+Suggest additional avenues for exploration, such as analyzing content genres or viewing durations to understand stress-coping mechanisms.
+
+Planned Steps
+
 To achieve the project goals, the following steps will be undertaken:
 
-1. **Data Cleaning and Preprocessing**:
-   - Convert timestamps from UTC to local time for accurate interpretation.
-   - Extract key fields, such as date, time, and video details, into a structured format like CSV for easier manipulation.
+1. Data Cleaning and Preprocessing
 
-2. **Exploratory Data Analysis (EDA)**:
-   - Analyze the frequency of viewing by hour.
-   - Summarize total time spent watching videos and categorize habits into morning, afternoon, evening, or late-night.
-  
-3. **Merging Datasets**:
+Convert timestamps from UTC to local time for accurate interpretation.
 
-   -Join the YouTube and transaction datasets based on timestamps.
-   -Create derived features, such as time gaps between transactions and viewing activities.
+Extract key fields, such as date, time, and video details, into a structured format like CSV for easier manipulation.
 
-3. **Visualization**:
-   - Create detailed heatmaps to visualize hourly activity patterns.
-   - Use time-series graphs to illustrate changes in habits over time.
-   - Compare viewing behavior on workdays versus weekends using bar charts.
+2. Exploratory Data Analysis (EDA)
 
-4. **Insights and Documentation**:
-   - Identify correlations, such as increased activity during specific times of the day.
-   - Present findings in a clear, actionable format with accompanying visuals.
+Analyze the frequency of viewing by hour and day.
 
-5. **Future Work and Recommendations**:
-   - Explore deeper insights by analyzing content genres or viewing duration.
-   - Suggest changes to improve productivity or reduce potential overuse of YouTube.
+Summarize total time spent watching videos during finals weeks compared to regular periods.
 
----
+3. Visualization
 
-## Tools and Libraries
+Create heatmaps to visualize hourly activity patterns.
+
+Use time-series graphs to illustrate changes in habits over time.
+
+Compare viewing behavior during finals weeks versus regular weeks using bar charts.
+
+4. Insights and Documentation
+
+Identify significant patterns, such as spikes in activity during late-night hours in finals weeks.
+
+Present findings in a clear, actionable format with accompanying visuals.
+
+5. Future Work and Recommendations
+
+Explore deeper insights by analyzing content genres or viewing durations.
+
+Suggest behavioral adjustments to enhance productivity during finals weeks.
+
+Tools and Libraries
+
 The project will utilize the following tools and libraries:
 
-- **Python**: The primary programming language for data processing and analysis.
-- **Pandas**: For cleaning, filtering, and structuring the data.
-- **Matplotlib and Seaborn**: To create static and interactive visualizations.
-- **NumPy**: For mathematical computations where needed.
-- **Google Takeout**: To export and download YouTube activity data.
+Python: The primary programming language for data processing and analysis.
+
+Pandas: For cleaning, filtering, and structuring the data.
+
+Matplotlib and Seaborn: To create static and interactive visualizations.
+
+NumPy: For mathematical computations where needed.
+
+Google Takeout: To export and download YouTube activity data.
 
 These tools ensure efficient data handling and insightful analysis.
 
----
+Acknowledgments
 
-## Acknowledgments
 I extend my gratitude to Google Takeout for providing access to my YouTube watch history data. This project is a testament to how personal data can offer valuable insights when analyzed thoughtfully.
 
-You can find the results and report as a PDF file in the files section..
+You can find the results and report as a PDF file in the files section.
 
